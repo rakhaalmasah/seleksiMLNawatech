@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Chatbot FAQ Nawatech")
+
 import pandas as pd
 
 import torch
@@ -54,7 +56,6 @@ def retrieve_answer(user_question):
         return f"Terjadi kesalahan saat memproses pertanyaan: {e}", 0.0
 
 
-st.set_page_config(page_title="Chatbot FAQ Nawatech")
 st.title("🤖 Chatbot FAQ Nawatech")
 st.markdown("Silakan ajukan pertanyaan terkait Nawatech di bawah ini.")
 
